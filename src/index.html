@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Starlight Card Simulation</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 2rem;
+      background-color: #191b1c; /* New background color */
+      color: #fff; /* Text color for better contrast */
+    }
+    .container {
+      text-align: center;
+      color: inherit; /* Inherit text color from body */
+    }
+    button {
+      padding: 1rem 2rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #6b6b6b; /* New button color */
+      color: #fff; /* Text color for good contrast */
+    }
+    .results {
+      margin-top: 1rem;
+      font-weight: bold;
+      color: #fff; /* Text color for good contrast */
+    }
+    #numSimulations {
+      margin-bottom: 1rem;
+      padding: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      color: #fff; /* Text color for good contrast */
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Starlight Card Simulation</h1>
+    <input type="number" id="numSimulations" placeholder="Enter # of Simulations">
+    <button id="simulateButton">Run Simulation</button>
+    <div id="results"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
