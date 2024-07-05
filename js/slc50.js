@@ -50,8 +50,12 @@ function runSimulations(numSimulations) {
     Lowest Chests Needed: ${lowestChestsNeeded}
     Highest Chests Needed: ${highestChestsNeeded}
   `;
+  // Verify Calculated Results
+  console.log("Calculated Results:", results);
 
-  document.getElementById('results').textContent = results;
+  const resultsElement = document.getElementById('results');
+  resultsElement.textContent = results;
+  console.log("Updating results element with:", results);
 }
 
 const simulateButton = document.getElementById('simulateButton');

@@ -16,7 +16,8 @@ const simSlc50Button = document.getElementById('sim-slc50');
 const simOtherButton = document.getElementById('sim-other');
 
 simSlc50Button.addEventListener('click', () => {
-  loadSimulation('simulations/slc50.html');
+  loadSimulation('../simulations/slc50.html'); // Navigate up one directory from 'js' to root
+  console.log("SLC simulation loaded");
 });
 
 simOtherButton.addEventListener('click', () => {
